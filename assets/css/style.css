@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	color: #444;
 }
 
 .customBtn {
@@ -33,8 +34,4 @@ body {
 	margin-top: 0;
     margin-bottom: 0;
     font-size: 17px;
-}
-
-.search-form {
-	padding: 10px;
 }
