@@ -3,9 +3,74 @@
 <head>
 	<title>New York Times Search</title>
 
-	https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
 
+<div class="container">
+	<!-- Jumbotron header -->
+	<div class="jumbotron">
+		<div class="jumbotron-text">
+			<h1>
+				<i class="fa fa-newspaper-o"></i> 
+				New York Times Search
+			</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3><i class="fa  fa-list-alt"></i> Search Parameters</h3></div>
+				<div class="panel-body">
+					<form class="search-form">
+						<div class="form-group">
+							<label>Search Term:</label>
+							<input type="text" class="form-control" id="search">
+						</div>
+						<div class="form-group">
+							<label>Number of Records to Retrieve:</label>
+							<br>
+							<select class="form-control" id="numberRecords">
+								<option value="1">1</option>
+								<option value="5" selected="">5</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Start Year (Optional):</label>
+							<input type="text" class="form-control" id="startYear">
+						</div>
+						<div class="form-group">
+							<label>End Year (Optional):</label>
+							<input type="text" class="form-control" id="endYear">
+						</div>
+						<button type="submit" class="btn btn-default customBtn"><i class="fa fa-search"></i> Search</button>
+						<button type="button" class="btn btn-default customBtn"><i class="fa fa-trash"></i> Clear Results</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3><i class="fa fa-table"></i> Top Articles</h3></div>
+				<div class="panel-body">
+					<div class="articlePlacement"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
 </body>
 </html>
